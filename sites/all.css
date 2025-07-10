@@ -37,12 +37,13 @@ h1{
     text-wrap: nowrap;
 }
 .hacker{position: absolute;
-    height: 80%;
+    height: 90%;
 }
 span{
     margin-left: 30px;
 }
 h2{
+    text-wrap: wrap;
     position: absolute;
     top: 50%;
     font-size: 30px;
