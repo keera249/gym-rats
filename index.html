@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMIES</title>
+</head>
+<body>
+    <div class="containerr">
+        <div class="upper">
+            <h2>We are gym rats</h2>
+            <img src="imgs/char/weight.png" class="mainimg">
+            <h1 class="hh">WANNA KNOW MORE ABOUT US?</h1>
+            <h1>CHECK DOWN HERE</h1>
+            <div class="circle" id="circle">
+                <a href="sites/keera.html" class="item">KEERA</a>
+                <a href="sites/max.html" class="item">MAX</a>
+                <a href="sites/kilwa.html" class="item">KILWA</a>
+                <a href="sites/amigo.html" class="item">AMIGO</a>
+                <a href="sites/seheba.html" class="item">SEHEBA</a>
+                <a href="sites/al3bd.html" class="item">AL3BD</a>
+                <a href="sites/nyle.html" class="item">NYLE</a>
+                <a href="sites/khaled.html" class="item">KHALED</a>
+            </div>
+        </div>
+    </div>
+
+      <script>
+    const items = document.querySelectorAll('.item');
+    const radius = 120;  // أصغر عشان تتناسب مع حجم الدائرة
+    let angle = 0;
+
+    function updatePositions() {
+      const step = (2 * Math.PI) / items.length;
+      items.forEach((item, i) => {
+        const currentAngle = angle + step * i;
+        const x = radius * Math.cos(currentAngle);
+        const y = radius * Math.sin(currentAngle);
+        item.style.left = `${150 + x - item.offsetWidth / 2}px`;
+        item.style.top  = `${150 + y - item.offsetHeight / 2}px`;
+      });
+
+      angle += 0.007;
+      requestAnimationFrame(updatePositions);
+    }
+
+    updatePositions();
+  </script>
+</body>
+</html>
