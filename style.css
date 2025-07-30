@@ -8,91 +8,66 @@ body{
     box-sizing: border-box;
 }
 .containerr{
-    height: 900px;
     width:100%;
-    overflow: hidden;
 }
 .upper{
     background-color: var(--main-color);
-    height: 100%;
-    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .mainimg{
     height: 250px;
-    transform: translateX(30%) translateY(-30px);
 }
 h2{
-    text-wrap: nowrap;
     color: var(--color);
-    margin: 0cm;
     font-size: 300%;
 }
 h3{
-    text-wrap: nowrap;
-    font-size: 55px;
+    font-size: 100px;
     color: var(--test);
-    position:absolute;
-    top: 67px;
-    left: 40px;
-}
-h1{
-    margin-left: 20px;
-    font-size: 18px;
-    color: var(--color);
 }
 .hh{
-    margin-left: 15px;
-    text-wrap: nowrap;
-    font-size: 22px;
+    font-size: 30px;
 }
-.circle {
-    position: relative;
-    width: 300px;  
-    height: 300px;
-    margin: 20px;
-    margin-left: 60px;
-    margin-top: 90px;
+h1{
+    font-size: 30px;
+    color: var(--color);
 }
 
+.circle {
+    position: relative;
+    width: 350px;  
+    height: 350px;
+    margin-top: 20px;
+}
 .item {
     text-decoration: none;
     position: absolute;
     color: var(--main-color);
     background: var(--color);
     padding: 4px 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 20px;
     white-space: nowrap;
     transition: .7s;
+    transform: translateX(17px) translateY(7px);
 }
 .item:hover{
     transform: scale(1.2) ;
     background: var(--main-color);
     color: var(--color);
 }
-@media (min-width:700px){
-    h2{
-        margin-left: 50%;
-        transform: translateX(-50%) ;
-        text-wrap: nowrap;
+@media (min-width:1000px) {
+    .upper *{
+        transform: scale(1.7);
     }
-    .mainimg{
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-    h3{
-        margin-left: 50%;
-        transform: translateX(-63%) translateY(35px);
-    }
-    h1{
-        font-size: 30px;
-        margin-left: 30px;
-    }
-    .hh{
-        font-size: 40px;
+    .circle *{
+        transform: scale(1.2);
     }
     .circle{
-         margin-left: 50%;
-        transform: translateX(-50%);
+        margin-top: 170px;
     }
 }

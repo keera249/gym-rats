@@ -8,78 +8,61 @@ body{
     box-sizing: border-box;
 }
 .container{
-    position: relative;
     background-color: var(--main-color);
-    height:900px;
-    margin: 0px;
-    margin-top: -5%;
+    width: 100%;
+    height:110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 h1{
-    position: absolute;
-    top:2%;
-    margin-left: 10%;
     color: var(--color);
     font-size: 60px;
 }
 .mainimg{
-    position: absolute;
     height: 25%;
-    top: 16%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .main-speach{
-    position: absolute;
     color: var(--color);
-    top: 43%;
-    left: 7%;
     font-size: 30px;
     text-wrap: nowrap;
+    transform: translateX(0px);
 }
-.hacker{position: absolute;
-    height: 90%;
-}
-span{
-    margin-left: 30px;
+.hacker{
+    height: 30px;
 }
 h2{
     text-wrap: wrap;
-    position: absolute;
-    top: 50%;
     font-size: 30px;
-    left: 7%;
     color: var(--color);
 }
 h3{
-    position: absolute;
-    top: 67%;
-    left: 15%;
     color: var(--color);
-    font-size: 40px;
+    font-size: 30px;
+    transform: translateY(-40px);
 }
 a img{
-    position: absolute;
-    top: 83%;
-    left: 37%;
     height: 100px;
     transition: 1s;
+    transform: translateY(-20px);
 }
-a img:hover{
-    transform: scale(1.2);
+a{
+    position: relative;
 }
 a::before{
     content: "click me";
     opacity:0;
     position: absolute;
     top: 88%;
-    left:37% ;
     font-size: 40px;
-    display:hide;
     transition: 1s;
+    transform: translate(0,100px);
+    text-wrap: nowrap;
 }
 a:hover::before{
     opacity: 1;
     color: var(--color);
-    display: inline;
-    transform: translate(-15%,-220%);
+    top:-180px;
 }

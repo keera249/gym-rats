@@ -13,24 +13,18 @@ body{
 }
 span{
     display: inline-block;
-    transform: translateY(-30px) ;
+    transform: translateY(200px) ;
     color: #a3b18a;
-    animation: scaler 1s infinite .5s ease-in-out  alternate ;
-}
-@keyframes scaler {
-    50%{
-        transform: scale(1.6) translateY(-30px);
-    }
 }
 .loader{
     height: 100px;
     width: 100px;
     border: 10px dashed #a3b18a;
     border-radius: 50%;
-    animation: 1s identifier infinite .5s ease-in-out  alternate;
+    animation: 400s identifier infinite .5s linear ;
 }
 @keyframes identifier {
-    50%{
-        transform: rotate(180deg) scale(1.6);
+    100%{
+        transform: rotate(99999deg) scale(1.3);
     }
 }
