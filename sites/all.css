@@ -27,18 +27,18 @@ h1{
 }
 .main-speach{
     color: var(--color);
-    font-size: 40px;
+    font-size: 30px;
     text-wrap: wrap;
-    transform: translateX(30px);
+    transform: translateX(20px);
 }
 .hacker{
     height: 30px;
 }
 h2{
-    text-wrap: wrap;
+    text-wrap:wrap;
     font-size: 30px;
     color: var(--color);
-    transform: translateX(30px);
+    transform: translateX(25px);
 }
 h3{
     color: var(--color);
