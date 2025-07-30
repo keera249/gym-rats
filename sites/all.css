@@ -16,19 +16,20 @@ body{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    text-wrap: wrap;
 }
 h1{
     color: var(--color);
-    font-size: 60px;
+    font-size: 50px;
 }
 .mainimg{
     height: 25%;
 }
 .main-speach{
     color: var(--color);
-    font-size: 30px;
-    text-wrap: nowrap;
-    transform: translateX(0px);
+    font-size: 40px;
+    text-wrap: wrap;
+    transform: translateX(30px);
 }
 .hacker{
     height: 30px;
@@ -37,6 +38,7 @@ h2{
     text-wrap: wrap;
     font-size: 30px;
     color: var(--color);
+    transform: translateX(30px);
 }
 h3{
     color: var(--color);
